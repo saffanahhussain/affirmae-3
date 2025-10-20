@@ -1,0 +1,49 @@
+components:
+- components: []
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- components:
+  - event_bindings: {click: Create_Avatar_Link_click}
+    layout_properties: {grid_position: 'YDBVHJ,EILDUN'}
+    name: Create_Avatar_Link
+    properties: {text: Create Avatar}
+    type: Link
+  - event_bindings: {click: Find_Home_Link_click}
+    layout_properties: {grid_position: 'MLVNUV,MDZAAQ'}
+    name: Find_Home_Link
+    properties: {text: Find Home}
+    type: Link
+  layout_properties: {slot: left-nav}
+  name: column_panel_1
+  properties: {background: 'theme:Tertiary Container'}
+  type: ColumnPanel
+- layout_properties: {slot: title}
+  name: label_1
+  properties:
+    align: center
+    background: theme:Background
+    bold: true
+    font: papyrus
+    font_size: 60
+    italic: true
+    spacing_above: large
+    spacing_below: none
+    text: |
+      AFFIRMAE
+  type: Label
+container:
+  properties: {background: 'theme:Tertiary', foreground: 'theme:Surface', html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
+layout_metadata: {description: Affirmae's standard Homepage}
+slots:
+  Main_slot:
+    index: 0
+    set_layout_properties: {grid_position: 'KVNXDS,FMAIUL'}
+    target: {name: content_panel, type: container}
