@@ -5,9 +5,21 @@ components_by_slot:
     properties: {text: Choose your Avatar!}
     type: Label
   - layout_properties: {}
-    name: Fairy_Canvas
+    name: Fairy_Body_Canvas
     properties: {height: 100}
     type: Canvas
+  - layout_properties: {}
+    name: Fairy_Wing
+    properties: {}
+    type: DropDown
+  - layout_properties: {}
+    name: canvas_1
+    properties: {height: 100}
+    type: Canvas
+  - layout_properties: {}
+    name: Fairy_Outfit
+    properties: {}
+    type: DropDown
 is_package: true
 layout:
   form_event_bindings: {show: form_show}
