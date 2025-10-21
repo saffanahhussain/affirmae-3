@@ -4,6 +4,10 @@ components_by_slot:
     name: label_1
     properties: {text: Choose your Avatar!}
     type: Label
+  - layout_properties: {}
+    name: Fairy_Canvas
+    properties: {height: 100}
+    type: Canvas
 is_package: true
 layout:
   form_event_bindings: {show: form_show}
