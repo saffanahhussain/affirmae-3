@@ -1,5 +1,6 @@
 from ._anvil_designer import CreateAvatarTemplate
 from anvil import *
+import anvil.server
 
 
 class CreateAvatar(CreateAvatarTemplate):

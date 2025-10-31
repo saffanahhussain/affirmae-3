@@ -9,6 +9,11 @@ components:
   properties: {}
   type: FlowPanel
 - components:
+  - event_bindings: {click: Sign_Up_Link_click}
+    layout_properties: {grid_position: 'EIJFKT,BJCGKN'}
+    name: Sign_Up_Link
+    properties: {text: Sign Up}
+    type: Link
   - event_bindings: {click: Create_Avatar_Link_click}
     layout_properties: {grid_position: 'YDBVHJ,EILDUN'}
     name: Create_Avatar_Link

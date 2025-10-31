@@ -1,5 +1,6 @@
 from ._anvil_designer import HomepageTemplate
 from anvil import *
+import anvil.server
 
 
 class Homepage(HomepageTemplate):
@@ -16,6 +17,13 @@ class Homepage(HomepageTemplate):
   def Find_Home_Link_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form('FindHome')
+
+  def Sign_Up_Link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('SignUp')
+
+  
+    
 
   
   

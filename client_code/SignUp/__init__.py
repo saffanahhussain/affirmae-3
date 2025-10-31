@@ -1,9 +1,9 @@
-from ._anvil_designer import FindHomeTemplate
+from ._anvil_designer import SignUpTemplate
 from anvil import *
 import anvil.server
 
 
-class FindHome(FindHomeTemplate):
+class SignUp(SignUpTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
